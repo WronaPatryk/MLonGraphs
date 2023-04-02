@@ -13,6 +13,7 @@ def getAdjacencyFromCSV(data):
     
     for x in data:
         adjacencyMatrix[x[0]][x[1]] = 1
+        adjacencyMatrix[x[1]][x[0]] = 1
 
     return adjacencyMatrix
     
